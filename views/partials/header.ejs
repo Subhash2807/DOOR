@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./css/signup.css">
-    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/select.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Indie+Flower|Permanent+Marker|Philosopher|Shadows+Into+Light|Uncial+Antiqua|Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
+    <script src="./js/script.js" type="text/javascript"></script>
 </head>
 <body>
      <nav>
@@ -35,4 +36,10 @@
                 <li><a href="new">Sign Up </a></li>
              </ul>  
      </nav>
+     <script>
+        document.querySelector('.hamburger').addEventListener('click',function(){
+      document.querySelector(".nav-links").classList.toggle('open');
+   });
+  
+    </script>
      

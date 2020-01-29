@@ -5,6 +5,10 @@
     color:white;
 
 }
+body{
+    background-image: linear-gradient(to right, rgba(0,0,255,0.7), rgba(255,0,0,0.8));
+    background-size: cover;
+}
 h1{
     font-size: 2rem;
 }
@@ -32,7 +36,9 @@ h1{
     text-align: center;
 }
 .server , .client-overlay{
-    background-color: red;
+    background-image: linear-gradient(to left,rgb(143,45,35), rgba(200,67,96));
+
+
 }
 .box input{
     margin:8px 0;
@@ -72,7 +78,8 @@ h1{
 }
 
 .client , .server-overlay{
-    background-color:rgb(101, 101, 196);
+    background-image: linear-gradient(to right, rgba(0,0,150), rgba(0,0,120));
+
 }
 .box{
     display: flex;
