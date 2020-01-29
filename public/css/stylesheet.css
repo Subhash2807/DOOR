@@ -1,0 +1,125 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Ropa Sans', sans-serif;
+    color:white;
+
+}
+h1{
+    font-size: 2rem;
+}
+.sign, .overlay{
+    display: flex;
+    width: 60vw;
+    height: 80vh;
+    min-width: 600px;
+    position: absolute;
+
+}
+.form ,.layer{
+    height: 100%;
+    width: 50%;
+    min-width: 50%;
+
+}
+.box form{
+    display: flex;
+    flex-direction: column;
+    padding:0 50px;
+    height:100%;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+.server , .client-overlay{
+    background-color: red;
+}
+.box input{
+    margin:8px 0;
+    padding:12px 10px;
+    width:100%;
+    box-sizing: border-box;
+}
+.box button{
+    border-radius: 20px;
+    border:1px solid blue;
+    background: orange;
+    color:#fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding:12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 100ms ease-in;
+}
+.server-overlay , .client-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 70px;
+    padding:0 40px;
+    box-sizing: border-box;
+    transition: all 1000ms;
+    
+
+}
+.box button:active{
+    transform: scale(0.95);
+}
+
+.box button:focus{
+    outline:none;
+}
+
+.client , .server-overlay{
+    background-color:rgb(101, 101, 196);
+}
+.box{
+    display: flex;
+    width: 60vw;
+    height: 80vh;
+    min-width: 600px;
+    box-shadow: 0px 0px 10px rgb(71, 68, 73);
+}
+.body{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.client{
+    z-index:1 ;
+    transition: all 1s;
+}
+.server{
+    z-index:0 ;
+    transition: all 1s;
+
+}
+.client-overlay{
+    z-index:1;
+    transition: all 1s;
+
+}
+.server-overlay{
+    z-index:0;
+    transition: all 1s;
+}
+
+.right{
+    transform: translate(100%);
+    transition: transform 1000ms;
+}
+.left{
+    transform: translate(-100%);
+    transition: transform 1000ms;
+}
+.right1{    
+    transform: translate(0%);
+    transition: transform 1000ms;
+}
+.left1{
+    transform: translate(0%);
+    transition: transform 1000ms;
+}
+

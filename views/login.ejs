@@ -1,0 +1,48 @@
+<%- include ('./partials/header') %>
+<body>
+    <div class="body">
+        <div class="box">
+            <div class="sign">
+            <div class="client form">
+                <form action="#" method="post">
+                    <h1>CLIENT DOOR</h1>
+                    <h1>SIGN IN</h1><br>
+                        <input type="text" name="clientId" placeholder="CLIENT ID">
+                         <input type="password" name="clientPwd" Placeholder="PASSWORD">
+                        <button type="submit">Sign in</button>
+                        <br>
+                        <a href="#">Forget password?</a>
+                        <br>
+                        <button>Register</button>
+                    </form>
+            </div>
+            <div class="server form">
+                <form action="#" method="post">
+                    <h1>SERVER DOOR</h1>
+                    <h1>SIGN IN</h1><br>
+                    <input type="text" placeholder="SERVER ID" name="serverId">
+                    <input type="password" placeholder="PASSWORD" name="serverPwd">
+                    <button type="submit"> Sign in</button><br>
+                    <a href="#">Forget password?</a><br>
+                    <button>Register</button>
+
+                </form>
+
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="server-overlay layer">
+                <h1>hello! Dear Server.</h1>
+                <h3> click here for client login. </h3>
+                <button onclick="right()">CLIENT</button>
+            </div>
+            <div class="client-overlay layer">
+                <h1>hello! Dear client.</h2>
+                <h3> click here for server login </h3>
+                <button onclick="left()">SERVER</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

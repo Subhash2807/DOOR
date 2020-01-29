@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 9vh;
+    background:steelblue;
+}
+.brand{
+    width:180px;
+    height: 80%;
+    
+    align-items: center;
+  
+}
+#brand-name{
+ display: inline-block;
+ height: 100%; 
+ position: relative;
+ top: -11px;
+ 
+
+ /* font-family: 'Permanent Marker', cursive; */
+ /* font-family: 'Philosopher', sans-serif; */
+ /* font-family: 'Volkhov', serif; */
+ /* font-family: 'Josefin Slab', serif; */
+ /* font-family: 'Patrick Hand', cursive; */
+ font-family: 'Press Start 2P', cursive;
+ /* font-family: 'Pontano Sans', sans-serif; */
+ /* font-family: 'Parisienne', cursive; */
+ left: 5px;
+}
+.brand img{
+  
+    height: 100%;
+    border-radius: 20%;
+}
+.nav-links .brand  a{
+     color:  black;  
+    font-size: 2em;
+    height: 100%;
+    font-weight: 700;
+    letter-spacing:.5px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+ font-family: 'Josefin Slab', serif;
+    font-weight: 800;
+    font-size: 20px;  
+}
+
+.logo{
+    display: none;
+}
+
+
+
+
+/* section */
+
+
+.a{
+    width:100%;
+    height:375px;
+    /* background:#999 ; */
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/first.jpg");
+    background-size: cover;
+    /* overflow: hidden; */
+
+}
+
+.aa{
+    width: 75%;
+    height:150px;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 3px 2px 2px black;
+    margin: 30px auto 15px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    /* background-image: url("text1.png"); */
+
+}
+.aa img{
+    width: 70%;
+   
+    z-index: 1;
+    height: auto;
+    /* vertical-align: middle; */
+}
+.ab{
+    width: 75%;
+    height:150px;
+    /* background-color: black;
+    opacity: 0.3; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.aba {
+     width:30%;
+     height: 100%;
+     border: 5px solid red;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+#sel{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    opacity: 1;
+}
+.abb{
+    width: 50%;
+    height: 100%;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.abb #in{
+    height:50px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    opacity: 1;
+    width: 260px;
+}
+.b{
+    width: 100%;
+    height:150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: darkgoldenrod;
+}
+.ba{
+    width:250px;
+    height:100%;
+    border:2px solid black;
+}
+.c{
+    width: 100%;
+    height: 70px;
+    background-color: darkseagreen;
+    opacity: 0.5;
+}
+.ca{
+    background-color: whitesmoke;
+}
+.d{
+    width:100% ;
+    height:200px;
+    background-color: red;
+}
+.e{
+    width: 100%;
+    height:500px;
+    background-color: violet;
+
+}
+footer{
+    height:580px;
+    width: 100%;
+    background:black ;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) and (min-width: 531px){
+    .line{
+        width:30px ;
+        height: 3px;
+        background: white   ;
+        margin: 5px;
+    }
+    nav{
+        position: relative;
+    }
+.brand{
+    display: none;
+}
+.hamburger{
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+    z-index: 2;
+    transform: translate(-5%, -50%);
+    right: 5%;
+}
+.logo{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: flex-start;
+    
+}
+.logo img{
+    height: 8vh;
+    border-radius: 5px;
+    margin:.5vh 1vh;
+}
+   .nav-links{
+       
+      position: fixed;
+      width:100%;
+      height: 60%;
+      background: steelblue;
+      flex-direction: column;
+      clip-path: circle(10px at 50% -30%);
+     -webkit-clip-path: circle(100px at 90% -10%) ;
+     transition: all 1s ease-out;
+     z-index: 5;
+     pointer-events : none; 
+  }
+   .open{
+    clip-path: circle(700px at 50% -50%);
+    -webkit-clip-path: circle(600px at 90% -10%) ;   
+    pointer-events: all;
+  } 
+  .b{
+      flex-direction: row;
+      height: 350px;
+      align-items: center;
+        flex-wrap: wrap;
+  }
+  .ba{
+    width:250px;
+    height:40%;
+    border:2px solid black;
+}
+
+}
+@media screen and (max-width: 531px){
+    .line{
+        width:30px ;
+        height: 3px;
+        background: white   ;
+        margin: 5px;
+    }
+    nav{
+        position: relative;
+    }
+.brand{
+    display: none;
+}
+.hamburger{
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+    z-index: 2;
+    transform: translate(-5%, -50%);
+    right: 5%;
+}
+.logo{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: flex-start;
+    
+}
+.logo img{
+    height: 8vh;
+    border-radius: 5px;
+    margin:.5vh 1vh;
+}
+   .nav-links{
+       
+      position: fixed;
+      width:100%;
+      height: 60%;
+      background: steelblue;
+      flex-direction: column;
+      clip-path: circle(10px at 50% -30%);
+     -webkit-clip-path: circle(100px at 90% -10%) ;
+     transition: all 1s ease-out;
+     pointer-events : none; 
+  }
+   .open{
+    clip-path: circle(700px at 50% -50%);
+    -webkit-clip-path: circle(600px at 90% -10%) ;  
+    z-index: 10; 
+    pointer-events: all;
+  } 
+  .b{
+      flex-direction: row;
+      height: 500px;
+      align-items: center;
+        flex-wrap: wrap;
+  }
+  .ba{
+    width:250px;
+    height:24%;
+    border:2px solid black;
+}
+    .aa{
+        display: none;
+    }
+    .ab{
+        width: 90%;
+        height:300px;
+       
+        margin: 0 auto;
+        margin: auto auto;    
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .aba{
+        width:250px;
+        height:50%;
+        justify-content: center;
+      
+    }
+    .abb{
+       
+       
+
+    }
+    .abb{
+        width:250px;
+        height: 50%;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+    #in{
+        width:230px;
+    }
+
+    }
