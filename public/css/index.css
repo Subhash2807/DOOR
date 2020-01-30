@@ -162,20 +162,77 @@ input{
      letter-spacing: .8px;
      border: 0;
 }
-
+.z{
+    width: 100%;
+    height: 50px;
+    background-color: lightgrey;
+}
 .b{
     width: 100%;
     height:150px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background: whitesmoke;
+    align-items: center;
+    background-image: url(../assets/hw1.jpg);
+    overflow: hidden;
+    background-size: cover;
 }
 .ba{
-    width:250px;
-    height:100%;
-    border:2px solid black;
+    width:230px;
+    height:80%;
+    background-size: 100%;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: steelblue ;
+    background-repeat: no-repeat;
+    /* background-color: white; */
 }
+.ba:nth-child(1){
+    background-image: url(../assets/hw10.jpg);
+    background-size: 100%;
+}
+.ba:nth-child(2){
+    background-image: url(../assets/hw9.jpg);
+    background-size: 100%;
+}
+.ba:nth-child(3){
+    background-image: url(../assets/hw7.jpg);
+    background-size: 100%;
+}
+.ba:nth-child(4){
+    background-image: url(../assets/hw5.jpg);
+    background-size: 100%;
+}
+.ba:nth-child(1):hover{
+    opacity: 0.6;
+    background-image: url(../assets/chef.png);
+    background-position: center;
+    background-color: black;
+    background-size: 90%;
+}
+.ba:nth-child(2):hover{
+    opacity: 0.6;
+    background-image: url(../assets/milk\ vender.png);
+    background-color: black;
+    background-size: 100%;
+}
+.ba:nth-child(3):hover{
+    opacity: 0.6;
+    background-image: url(../assets/dskilled.png );
+    background-position: center;
+    background-size: 90%;
+    background-color: black;
+}
+.ba:nth-child(4):hover{
+    opacity: 0.8;
+    background-image: url(../assets/daffordable.png);
+    background-color: black;
+    background-size: cover;
+}
+.ba img{
+    width: 100%;
+    height: 100%;
 .c{
     width: 100%;
     height: 70px;
