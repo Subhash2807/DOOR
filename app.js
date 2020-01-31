@@ -10,6 +10,23 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
 
+var mongoose1=require('mongoose');
+mongoose1.connect("mongodb://localhost/valet");
+mongoose1.set('useNewUrlParser', true);
+mongoose1.set('useFindAndModify', false);
+mongoose1.set('useCreateIndex', true);
+mongoose1.set('useUnifiedTopology', true);
+
+
+
+var valetschema = new mongoose1.Schema({
+    name:       String,
+    address:    String,
+    mobile:     String,
+    job:        String
+});
+
+var valet = mongoose1.model("valet",valetschema);
 
 
 
@@ -17,7 +34,10 @@ var usersschema = new mongoose.Schema({
     name: String,
     category:String
 });
-var users = mongoose.model("users",usersschema)
+
+
+
+var users = mongoose.model("users",usersschema);
 
 // users.create(
 //     { name: 'narendra' , 
@@ -67,18 +87,54 @@ app.post("/theteam",function(req,res){
     }); 
    
 });
+
+
+
 app.get("/theteam",function(req,res){
+    valet.find({},function(err,alluser){
+        if(err){
+            console.log(err);
+        }
+        else
+        {
+            res.render("theteam",{valet:alluser});
+        }
+    })
+  
+});
+
+app.get("/test",function(req,res){
     users.find({},function(err,alluser){
         if(err){
             console.log(err);
         }
         else
         {
-            res.render("theteam",{user:alluser});
+            res.render("test",{user:alluser});
         }
     })
   
 });
-app.listen(4000,function(){
+
+
+
+app.get('/join',function(req,res){
+    res.render("join");
+});
+
+
+app.post('/',function(req,res){
+
+    valet.create(req.body.valet,function(err,user){
+        if(err){
+            console.log(err);
+        }
+        else{
+            res.redirect('/');
+        }
+    }); 
+
+});
+app.listen(3000,function(){
     console.log("chalne laga");
 });

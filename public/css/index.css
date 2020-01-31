@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 nav{
-    height: 9vh;
+    height: 10vh;
     background:steelblue;
 }
 .brand{
@@ -62,7 +62,7 @@ h2{
     color: #232323;
  font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 15px;  
+    font-size: 21px;  
 }
 
 .logo{
@@ -154,7 +154,7 @@ select{
 }
 input{
     color: black;
-    border-radius: 4px;
+        border-radius: 4px;
     cursor: pointer;
     font-size: 15px;
     width: 350px;
@@ -212,10 +212,10 @@ input{
     background-image: url(../assets/hw7.jpg);
     
     background-position: center;
-    background-size: 100%;
+    background-size: 110%;
 }
 .ba:nth-child(4){
-    background-image: url(../assets/hw5.jpg);
+    background-image: url(../assets/camera1.jpg);
     
     background-position: center;
     background-size: 100%;
@@ -248,7 +248,7 @@ input{
 }
 .c{
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: whitesmoke;
     opacity: 0.95;
 }
@@ -260,15 +260,15 @@ input{
 }
 .ca span{
     width:27%;
-    height: 80%;
+    height: 100%;
     text-align: center;
-    background-color: black;
+    /* background-color: black; */
     border-radius: 4px;
     font-size: 18px;
-    font-family: fantasy;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    color:white;
-    padding-top: 16px;
+    color: rgb(51, 55, 61) ;
+    padding-top: 11px;
 }
 
 .d{
@@ -277,16 +277,15 @@ input{
     align-items: center;
     flex-direction: row;
     width:100% ;
-    height:500px;
-    /* background-color:black;
-    opacity: 0.7; */
+    
+    height:340px;
 }
 .d span{
 width: 27%;
 border-width: 0px;
 border-color: rgb(51, 55, 61);
 border-radius: 4px;
-height:80%;
+height:100%;
 display: flex;
 flex-direction: column;
 background-color: white;
@@ -345,7 +344,8 @@ h1{
 .e{
     width: 100%;
     height:500px;
-    background-color: violet;
+    background-image:   ;
+    background-size:
 
 }
 footer{
